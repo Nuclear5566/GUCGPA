@@ -24,7 +24,12 @@ function calculateGPA() {
 function addSubject() {
     let container = document.getElementById("subjects");
     let div = document.createElement("div");
-    div.innerHTML = `<input type="number" class="grade" placeholder="Enter Grade" step="0.01"> 
-                     <input type="number" class="weight" placeholder="Enter Weight">`;
+    div.style.marginBottom = "10px";
+    div.style.display = "flex";
+    div.style.justifyContent = "space-between";
+    div.innerHTML = `<input type="number" class="grade" placeholder="Enter Grade" step="0.01" 
+                     style="flex: 1; padding: 10px; margin-right: 5px; border: none; background: #2a2a2a; color: #fff; border-radius: 5px; appearance: textfield;">
+                     <input type="number" class="weight" placeholder="Enter Weight" 
+                     style="flex: 1; padding: 10px; border: none; background: #2a2a2a; color: #fff; border-radius: 5px; appearance: textfield;">`;
     container.appendChild(div);
 }
